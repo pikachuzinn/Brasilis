@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Desafio Brasilis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="quiz-page">
+
+    <!-- Container Principal -->
+    <div class="quiz-container" id="quizContainer">
+
+                       <!-- Header do Quiz -->
+        <div class="quiz-header-top">
+            <!-- NOVO: Container para a linha superior (Voltar e Info da Pergunta) -->
+            <div class="quiz-header-controls">
+                <button class="btn-voltar" onclick="voltarCategorias()">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </button>
+
+                <div class="quiz-info">
+                    <span id="numeroPergunta" class="numero-pergunta">Pergunta 1 de 10</span>
+                    <span id="categoriaNome" class="categoria-badge">Geografia</span>
+                </div>
+            </div>
+            <!-- FIM NOVO -->
+
+            <!-- Container do Timer (mantido como está) -->
+            <div class="timer-container" id="timerContainer">
+                <div class="timer-display" id="timerDisplay">30</div>
+                <div class="timer-bar-bg">
+                    <div class="timer-bar" id="timerBar"></div>
+                </div>
+            </div>
+            <!-- FIM NOVO -->
+        </div>
+
+        <!-- Barra de Progresso (mantida como está) -->
+        <div class="progress-container">
+            <div id="progressoBar" class="progress-bar" style="width: 10%;"></div>
+        </div>
+
+        <!-- Conteúdo do Quiz -->
+        <div class="quiz-content">
+
+            <!-- Pergunta -->
+            <div class="quiz-body">
+                <h2 id="textoPergunta" class="pergunta-texto">Carregando pergunta...</h2>
+
+                <!-- Container para Imagem (se houver) -->
+                <div id="imagemPerguntaContainer" class="pergunta-imagem-container" style="display: none;">
+                    <!-- A imagem será inserida aqui pelo JS -->
+                </div>
+
+                <!-- Alternativas -->
+                <div id="alternativasContainer" class="alternativas-container">
+                    <!-- Alternativas serão inseridas aqui pelo JavaScript -->
+                </div>
+
+                <!-- REMOVIDO: Botão Próxima Pergunta -->
+                <!-- <button id="proximoBtn" class="btn-primary" style="display: none;">Próxima Pergunta</button> -->
+            </div>
+
+            <!-- Footer com Streak e Pontuação/Acertos (mantido como está) -->
+            <div class="quiz-footer">
+                <div class="streak-indicator">
+                    <i class="fas fa-fire"></i>
+                    <span>Streak: <strong id="streakAtual">0</strong></span>
+                </div>
+                <div class="quiz-score-info">
+                    <span>Acertos: <strong id="acertosTexto">0</strong></span>
+                    <span>Pontos: <strong id="pontosTexto">0</strong></span>
+                </div>
+            </div>
+
+        </div>
+
+
+    <!-- Modal de Resultado -->
+    <div id="resultadoModal" class="modal" style="display: none;">
+        <div class="modal-content resultado-modal">
+            <div class="resultado-header">
+                <i id="resultadoIcone" class="fas fa-trophy resultado-icone"></i>
+                <h2 id="resultadoTitulo" class="resultado-titulo">Parabéns!</h2>
+            </div>
+
+            <div class="resultado-body">
+                <div class="resultado-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Acertos</span>
+                        <span id="resultadoAcertos" class="stat-value">0/10</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Pontos</span>
+                        <span id="resultadoPontos" class="stat-value">0</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Aproveitamento</span>
+                        <span id="resultadoPorcentagem" class="stat-value">0%</span>
+                    </div>
+                </div>
+
+                <div class="resultado-mensagem">
+                    <p id="resultadoMensagem">Você foi muito bem!</p>
+                </div>
+
+                <div class="resultado-acoes">
+                    <button class="btn-primary" onclick="jogarNovamente()">
+                        <i class="fas fa-redo"></i> Jogar Novamente
+                    </button>
+
+                    <button class="btn-secondary" onclick="verRanking()">
+                        <i class="fas fa-trophy"></i> Ver Ranking
+                    </button>
+
+                    <button class="btn-secondary" onclick="voltarHome()">
+                        <i class="fas fa-home"></i> Início
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Imagem Ampliada -->
+    <div id="imagemModal" class="imagem-modal" style="display: none;" onclick="fecharImagemModal()">
+        <div class="imagem-modal-content">
+            <span class="imagem-modal-close">&amp;times;</span>
+            <img id="imagemModalImg" src="" alt="Imagem ampliada">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/quiz.js"></script>
+
+</body>
+</html>

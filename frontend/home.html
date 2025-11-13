@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Desafio Brasilis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="home-page">
+    <!-- Indicador de Streak -->
+    <div class="streak-badge">
+        <span class="streak-label">Sequência</span>
+        <span class="streak-number" id="streakDias">0</span>
+        <span class="streak-text">DIAS</span>
+    </div>
+
+    <!-- Botão Perfil -->
+    <button class="btn-perfil" onclick="window.location.href='perfil.html'">
+        <i class="fas fa-user"></i>
+    </button>
+
+    <div class="home-container">
+        <!-- Logo e Título -->
+        <div class="home-header">
+            <h1 class="home-title">BRASILIS</h1>
+            <p class="home-subtitle">Teste seus conhecimentos sobre a cultura e história do Brasil</p>
+        </div>
+
+        <!-- Botões de Ação -->
+        <div class="home-buttons">
+            <button class="btn-home btn-iniciar" onclick="window.location.href='categorias.html'">
+                <i class="fas fa-play"></i> INICIAR
+            </button>
+            <button class="btn-home btn-ranking" onclick="window.location.href='ranking.html'">
+                <i class="fas fa-trophy"></i> RANKING
+            </button>
+            <button class="btn-home btn-opcoes" onclick="window.location.href='perfil.html'">
+                <i class="fas fa-user"></i> PERFIL
+            </button>
+        </div>
+    </div>
+
+    <!-- Decoração de Estrelas -->
+    <div class="stars-decoration">
+        <div class="star star-1"></div>
+        <div class="star star-2"></div>
+        <div class="star star-3"></div>
+        <div class="star star-4"></div>
+        <div class="star star-5"></div>
+    </div>
+
+       <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/streak.js"></script>
+    <script>
+        verificarLogin();
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            const dados = JSON.parse(localStorage.getItem('jogador')) || { streak_atual: 0 };
+            document.getElementById('streakDias').textContent = dados.streak_atual;
+        });
+    </script>
+
+</body>
+</html>

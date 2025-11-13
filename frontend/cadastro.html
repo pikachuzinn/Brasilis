@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Desafio Brasilis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2 class="auth-title">Cadastrar-se</h2>
+            
+            <form id="cadastroForm" class="auth-form">
+                <div class="input-group">
+                    <label for="emailCadastro">E-Mail</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input 
+                            type="email" 
+                            id="emailCadastro" 
+                            name="email" 
+                            placeholder="E-Mail"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="senhaCadastro">Senha</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input 
+                            type="password" 
+                            id="senhaCadastro" 
+                            name="senha" 
+                            placeholder="••••••••"
+                            required
+                            minlength="8"
+                        >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="senhaConfirm">Senha</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input 
+                            type="password" 
+                            id="senhaConfirm" 
+                            name="senhaConfirm" 
+                            placeholder="Confirme sua Senha"
+                            required
+                            minlength="8"
+                        >
+                    </div>
+                </div>
+
+                <p class="auth-link">
+                    Já possui cadastro. 
+                    <a href="login.html">Entrar</a>
+                </p>
+
+                <button type="submit" class="btn-auth">Começar</button>
+            </form>
+        </div>
+    </div>
+
+         <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        console.log('📄 cadastro.html carregado');
+        
+        document.getElementById('cadastroForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            console.log('\n========================================');
+            console.log('🔄 INICIANDO PROCESSO DE CADASTRO');
+            console.log('========================================\n');
+            
+            const email = document.getElementById('emailCadastro').value;
+            const senha = document.getElementById('senhaCadastro').value;
+            const senhaConfirm = document.getElementById('senhaConfirm').value;
+            
+            console.log('📧 Email:', email);
+            console.log('🔐 Senha:', '*'.repeat(senha.length), '(', senha.length, 'caracteres)');
+            console.log('🔐 Confirmação:', '*'.repeat(senhaConfirm.length), '(', senhaConfirm.length, 'caracteres)');
+            
+            if (senha !== senhaConfirm) {
+                console.log('❌ As senhas não coincidem!');
+                console.log('========================================\n');
+                alert('As senhas não coincidem!');
+                return;
+            }
+            
+            console.log('✅ Senhas coincidem');
+            
+            if (!validarSenhaForte(senha)) {
+                console.log('========================================\n');
+                alert('A senha deve ter no mínimo 8 caracteres, incluindo letras maiúsculas, minúsculas e números.');
+                return;
+            }
+            
+            try {
+                console.log('\n🌐 Enviando requisição para API...');
+                
+                const sucesso = await cadastrarUsuario(email, senha);
+                
+                console.log('\n📊 Resultado do cadastro:', sucesso ? '✅ SUCESSO' : '❌ FALHOU');
+                
+                if (sucesso) {
+                    console.log('\n🎉 Cadastro realizado com sucesso!');
+                    console.log('🔄 Redirecionando para login.html...');
+                    console.log('========================================\n');
+                    alert('Cadastro realizado com sucesso!');
+                    window.location.href = 'login.html';
+                } else {
+                    console.log('\n❌ Cadastro falhou!');
+                    console.log('========================================\n');
+                }
+            } catch (error) {
+                console.error('\n❌ ERRO CRÍTICO NO CADASTRO:', error);
+                console.error('========================================\n');
+                alert('Erro ao cadastrar. Tente novamente.');
+            }
+        });
+        
+        console.log('✅ Event listener do formulário configurado');
+    </script>
+</body>
+</html>

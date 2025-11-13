@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Desafio Brasilis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2 class="auth-title">Já possui cadastro?</h2>
+            
+            <form id="loginForm" class="auth-form">
+                <div class="input-group">
+                    <label for="email">E-Mail</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="usuario@gmail.com"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input 
+                            type="password" 
+                            id="senha" 
+                            name="senha" 
+                            placeholder="••••••••"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <p class="auth-link">
+                    Ainda não possuo Cadastro. 
+                    <a href="cadastro.html">Cadastrar-se</a>
+                </p>
+
+                <button type="submit" class="btn-auth">Começar</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        console.log('📄 login.html carregado');
+        
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            console.log('\n========================================');
+            console.log('🔄 INICIANDO PROCESSO DE LOGIN');
+            console.log('========================================\n');
+            
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+            
+            console.log('📧 Email:', email);
+            console.log('🔐 Senha:', '*'.repeat(senha.length), '(', senha.length, 'caracteres)');
+            
+            try {
+                console.log('\n🌐 Enviando requisição para API...');
+                
+                const sucesso = await validarLogin(email, senha);
+                
+                console.log('\n📊 Resultado do login:', sucesso ? '✅ SUCESSO' : '❌ FALHOU');
+                
+                if (sucesso) {
+                    console.log('\n🎉 Login bem-sucedido!');
+                    console.log('⏳ Aguardando 500ms antes de redirecionar...');
+                    
+                    setTimeout(() => {
+                        console.log('🔄 Redirecionando para home.html...');
+                        console.log('========================================\n');
+                        window.location.href = 'home.html';
+                    }, 500);
+                } else {
+                    console.log('\n❌ Login falhou!');
+                    console.log('💡 Verifique se o email e senha estão corretos');
+                    console.log('========================================\n');
+                    alert('Email ou senha incorretos!');
+                }
+            } catch (error) {
+                console.error('\n❌ ERRO CRÍTICO NO LOGIN:', error);
+                console.error('========================================\n');
+                alert('Erro ao fazer login. Tente novamente.');
+            }
+        });
+        
+        console.log('✅ Event listener do formulário configurado');
+    </script>
+</body>
+</html>
+</body>
+</html>
