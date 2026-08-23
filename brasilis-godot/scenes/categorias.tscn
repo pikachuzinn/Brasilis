@@ -1,0 +1,81 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/categorias.gd" id="1_5rloo"]
+
+[node name="Categorias" type="Control" unique_id=1415906010]
+layout_mode = 3
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_5rloo")
+
+[node name="Background" type="ColorRect" parent="." unique_id=709286408]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.105882354, 0.36862746, 0.24705882, 1)
+
+[node name="Margem" type="MarginContainer" parent="." unique_id=1923549541]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="@VBoxContainer@16" type="VBoxContainer" parent="Margem" unique_id=24407717]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 14
+
+[node name="@Control@17" type="Control" parent="Margem/@VBoxContainer@16" unique_id=859065962]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="@Label@18" type="Label" parent="Margem/@VBoxContainer@16" unique_id=1074736737]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "ESCOLHA A CATEGORIA"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@Label@19" type="Label" parent="Margem/@VBoxContainer@16" unique_id=703387812]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "Selecione uma categoria ou jogue com perguntas de todas!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@ScrollContainer@22" type="ScrollContainer" parent="Margem/@VBoxContainer@16" unique_id=382079099]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CategoriasContainer" type="VBoxContainer" parent="Margem/@VBoxContainer@16/@ScrollContainer@22" unique_id=59313569]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="BtnMix" type="Button" parent="Margem/@VBoxContainer@16" unique_id=874424181]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "🎲  MIX — Todas as Categorias"
+
+[node name="BtnVoltar" type="Button" parent="." unique_id=923801861]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 44)
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 24.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 16
+text = "← Voltar"

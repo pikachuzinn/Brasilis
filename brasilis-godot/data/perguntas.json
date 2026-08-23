@@ -1,0 +1,1631 @@
+{
+  "categorias": [
+    {
+      "nome": "Geografia",
+      "descricao": "Estados, capitais e biomas do Brasil",
+      "icone": "🗺️",
+      "cor": "#4ECDC4"
+    },
+    {
+      "nome": "Historia",
+      "descricao": "Eventos históricos do Brasil",
+      "icone": "📚",
+      "cor": "#FFD700"
+    },
+    {
+      "nome": "Folclore",
+      "descricao": "Lendas e personagens do folclore brasileiro",
+      "icone": "🎭",
+      "cor": "#FF6B6B"
+    }
+  ],
+  "perguntas": [
+    {
+      "texto": "Qual o maior bioma brasileiro?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Mata Atlântica",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Cerrado",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Amazônia",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Pantanal",
+          "correta": false
+        }
+      ],
+      "id": 0
+    },
+    {
+      "texto": "Qual a capital do estado do Amazonas?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Belém",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Manaus",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Porto Velho",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Rio Branco",
+          "correta": false
+        }
+      ],
+      "id": 1
+    },
+    {
+      "texto": "Qual rio atravessa a cidade de São Paulo?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rio Amazonas",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Rio Tietê",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Rio São Francisco",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Rio Paraná",
+          "correta": false
+        }
+      ],
+      "id": 2
+    },
+    {
+      "texto": "Qual é o maior estado brasileiro em extensão territorial?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "São Paulo",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Minas Gerais",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Amazonas",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Bahia",
+          "correta": false
+        }
+      ],
+      "id": 3
+    },
+    {
+      "texto": "Qual a capital do Rio Grande do Sul?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Curitiba",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Porto Alegre",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Florianópolis",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Pelotas",
+          "correta": false
+        }
+      ],
+      "id": 4
+    },
+    {
+      "texto": "Qual estado brasileiro é conhecido como \"Terra da Garoa\"?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rio de Janeiro",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "São Paulo",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Paraná",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Santa Catarina",
+          "correta": false
+        }
+      ],
+      "id": 5
+    },
+    {
+      "texto": "Qual o menor estado brasileiro?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Sergipe",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Alagoas",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Rio de Janeiro",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Espírito Santo",
+          "correta": false
+        }
+      ],
+      "id": 6
+    },
+    {
+      "texto": "Em qual região do Brasil fica o Pantanal?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Norte",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Nordeste",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Centro-Oeste",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Sul",
+          "correta": false
+        }
+      ],
+      "id": 7
+    },
+    {
+      "texto": "Qual a capital do Ceará?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Salvador",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Recife",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Fortaleza",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Natal",
+          "correta": false
+        }
+      ],
+      "id": 8
+    },
+    {
+      "texto": "Qual estado brasileiro faz fronteira com a Guiana Francesa?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Amazonas",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Roraima",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Amapá",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Pará",
+          "correta": false
+        }
+      ],
+      "id": 9
+    },
+    {
+      "texto": "Qual o maior rio totalmente brasileiro?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rio Amazonas",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Rio São Francisco",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Rio Paraná",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Rio Tocantins",
+          "correta": false
+        }
+      ],
+      "id": 10
+    },
+    {
+      "texto": "Qual a capital do Mato Grosso?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Campo Grande",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Cuiabá",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Goiânia",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Brasília",
+          "correta": false
+        }
+      ],
+      "id": 11
+    },
+    {
+      "texto": "Qual estado tem o maior litoral do Brasil?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rio de Janeiro",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "São Paulo",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Bahia",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Santa Catarina",
+          "correta": false
+        }
+      ],
+      "id": 12
+    },
+    {
+      "texto": "Qual a capital de Pernambuco?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Salvador",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Fortaleza",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Recife",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Maceió",
+          "correta": false
+        }
+      ],
+      "id": 13
+    },
+    {
+      "texto": "Qual região brasileira tem mais estados?",
+      "categoria": "Geografia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Sul",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Nordeste",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Norte",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Centro-Oeste",
+          "correta": false
+        }
+      ],
+      "id": 14
+    },
+    {
+      "texto": "Quem foi o primeiro presidente do Brasil?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Getúlio Vargas",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Juscelino Kubitschek",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Deodoro da Fonseca",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Dom Pedro II",
+          "correta": false
+        }
+      ],
+      "id": 15
+    },
+    {
+      "texto": "Em que ano foi proclamada a independência do Brasil?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "1808",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "1822",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "1889",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "1500",
+          "correta": false
+        }
+      ],
+      "id": 16
+    },
+    {
+      "texto": "Quem assinou a Lei Áurea que aboliu a escravidão no Brasil?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Dom Pedro I",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Princesa Isabel",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Tiradentes",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Zumbi dos Palmares",
+          "correta": false
+        }
+      ],
+      "id": 17
+    },
+    {
+      "texto": "Em que ano foi proclamada a República no Brasil?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "1822",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "1888",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "1889",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "1891",
+          "correta": false
+        }
+      ],
+      "id": 18
+    },
+    {
+      "texto": "Quem foi o líder da Inconfidência Mineira?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Dom Pedro I",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Tiradentes",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Zumbi dos Palmares",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Duque de Caxias",
+          "correta": false
+        }
+      ],
+      "id": 19
+    },
+    {
+      "texto": "Qual presidente construiu Brasília?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Getúlio Vargas",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Juscelino Kubitschek",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "João Goulart",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Jânio Quadros",
+          "correta": false
+        }
+      ],
+      "id": 20
+    },
+    {
+      "texto": "Quem descobriu o Brasil oficialmente?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Cristóvão Colombo",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Pedro Álvares Cabral",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Vasco da Gama",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Fernão de Magalhães",
+          "correta": false
+        }
+      ],
+      "id": 21
+    },
+    {
+      "texto": "Em que ano a Lei Áurea foi assinada?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "1822",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "1850",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "1888",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "1889",
+          "correta": false
+        }
+      ],
+      "id": 22
+    },
+    {
+      "texto": "Qual foi a capital do Brasil antes de Brasília?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Salvador",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Rio de Janeiro",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "São Paulo",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Ouro Preto",
+          "correta": false
+        }
+      ],
+      "id": 23
+    },
+    {
+      "texto": "Quem foi Zumbi dos Palmares?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Um presidente do Brasil",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Líder do Quilombo dos Palmares",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Um bandeirante",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Um imperador",
+          "correta": false
+        }
+      ],
+      "id": 24
+    },
+    {
+      "texto": "Em que ano o Brasil foi descoberto?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "1492",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "1500",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "1550",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "1600",
+          "correta": false
+        }
+      ],
+      "id": 25
+    },
+    {
+      "texto": "Quem proclamou a independência do Brasil?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Dom João VI",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Dom Pedro I",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Dom Pedro II",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Princesa Isabel",
+          "correta": false
+        }
+      ],
+      "id": 26
+    },
+    {
+      "texto": "Qual foi a primeira capital do Brasil?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rio de Janeiro",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Salvador",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "São Paulo",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Recife",
+          "correta": false
+        }
+      ],
+      "id": 27
+    },
+    {
+      "texto": "Quantos anos durou a escravidão no Brasil?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Aproximadamente 200 anos",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Aproximadamente 300 anos",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Aproximadamente 388 anos",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Aproximadamente 500 anos",
+          "correta": false
+        }
+      ],
+      "id": 28
+    },
+    {
+      "texto": "Qual bandeira foi hasteada na Proclamação da República?",
+      "categoria": "Historia",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A bandeira atual",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Uma bandeira provisória com 13 listras",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "A bandeira imperial",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A bandeira de Portugal",
+          "correta": false
+        }
+      ],
+      "id": 29
+    },
+    {
+      "texto": "Qual personagem do folclore brasileiro protege as matas?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Saci-Pererê",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Curupira",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Boto Cor-de-Rosa",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Mula sem Cabeça",
+          "correta": false
+        }
+      ],
+      "id": 30
+    },
+    {
+      "texto": "Qual é a lenda do personagem que tem apenas uma perna?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Saci-Pererê",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Curupira",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Iara",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Caipora",
+          "correta": false
+        }
+      ],
+      "id": 31
+    },
+    {
+      "texto": "Qual personagem do folclore vive nas águas dos rios?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Lobisomem",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Iara",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Boitatá",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Cuca",
+          "correta": false
+        }
+      ],
+      "id": 32
+    },
+    {
+      "texto": "Qual personagem tem os pés virados para trás?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Saci",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Curupira",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Caipora",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Lobisomem",
+          "correta": false
+        }
+      ],
+      "id": 33
+    },
+    {
+      "texto": "Qual lenda protege a fauna e a flora da floresta?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Cuca",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Caipora",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Mula sem Cabeça",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Boto",
+          "correta": false
+        }
+      ],
+      "id": 34
+    },
+    {
+      "texto": "Qual personagem do folclore é uma serpente de fogo?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Boitatá",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Iara",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Boto",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Curupira",
+          "correta": false
+        }
+      ],
+      "id": 35
+    },
+    {
+      "texto": "Qual lenda vira lobisomem nas noites de lua cheia?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O sétimo filho homem",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "O primeiro filho",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O terceiro filho",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "O quinto filho",
+          "correta": false
+        }
+      ],
+      "id": 36
+    },
+    {
+      "texto": "Qual personagem assusta viajantes e solta fogo pelas narinas?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Saci",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Curupira",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Mula sem Cabeça",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Cuca",
+          "correta": false
+        }
+      ],
+      "id": 37
+    },
+    {
+      "texto": "Qual personagem usa um gorro vermelho mágico?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Saci-Pererê",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Curupira",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Caipora",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Boto",
+          "correta": false
+        }
+      ],
+      "id": 38
+    },
+    {
+      "texto": "Qual personagem do folclore se transforma em um rapaz bonito nas festas?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Saci",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Boto Cor-de-Rosa",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Curupira",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Lobisomem",
+          "correta": false
+        }
+      ],
+      "id": 39
+    },
+    {
+      "texto": "Qual personagem adora pregar peças e fazer travessuras?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Saci-Pererê",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Iara",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Curupira",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Boitatá",
+          "correta": false
+        }
+      ],
+      "id": 40
+    },
+    {
+      "texto": "Qual criatura do folclore tem cabeça de jacaré?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Iara",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Cuca",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Boto",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Saci",
+          "correta": false
+        }
+      ],
+      "id": 41
+    },
+    {
+      "texto": "Qual personagem do folclore monta um porco do mato?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Saci",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Caipora",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Curupira",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Lobisomem",
+          "correta": false
+        }
+      ],
+      "id": 42
+    },
+    {
+      "texto": "Qual lenda é conhecida por atrair os homens com seu canto?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Cuca",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Iara",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Mula sem Cabeça",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Caipora",
+          "correta": false
+        }
+      ],
+      "id": 43
+    },
+    {
+      "texto": "Qual o dia em que se comemora o Folclore Brasileiro?",
+      "categoria": "Folclore",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "15 de agosto",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "22 de agosto",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "7 de setembro",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "12 de outubro",
+          "correta": false
+        }
+      ],
+      "id": 44
+    },
+    {
+      "texto": "Qual estado brasileiro tem esta bandeira?",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/bandeiras/sao-paulo.png",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rio de Janeiro",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "São Paulo",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Minas Gerais",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Bahia",
+          "correta": false
+        }
+      ],
+      "id": 45
+    },
+    {
+      "texto": "Esta é a bandeira de qual estado?",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/bandeiras/rio-de-janeiro.png",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "São Paulo",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Espírito Santo",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Rio de Janeiro",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Paraná",
+          "correta": false
+        }
+      ],
+      "id": 46
+    },
+    {
+      "texto": "Identifique o estado pela bandeira:",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/bandeiras/minas-gerais.png",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Goiás",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Minas Gerais",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Mato Grosso",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Tocantins",
+          "correta": false
+        }
+      ],
+      "id": 47
+    },
+    {
+      "texto": "Qual estado possui esta bandeira?",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/bandeiras/bahia.png",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Pernambuco",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Ceará",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Bahia",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Sergipe",
+          "correta": false
+        }
+      ],
+      "id": 48
+    },
+    {
+      "texto": "Esta bandeira pertence a qual estado?",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/bandeiras/amazonas.png",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Pará",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Amazonas",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Acre",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Rondônia",
+          "correta": false
+        }
+      ],
+      "id": 49
+    },
+    {
+      "texto": "Qual é este famoso monumento brasileiro?",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/monumentos/cristo-redentor.jpg",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Pão de Açúcar",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Cristo Redentor",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Corcovado",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Maracanã",
+          "correta": false
+        }
+      ],
+      "id": 50
+    },
+    {
+      "texto": "Identifique este monumento:",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/monumentos/congresso-nacional.jpg",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Palácio do Planalto",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Supremo Tribunal Federal",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Congresso Nacional",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Catedral de Brasília",
+          "correta": false
+        }
+      ],
+      "id": 51
+    },
+    {
+      "texto": "Qual é este ponto turístico brasileiro?",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/monumentos/teatro-amazonas.jpg",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Teatro Municipal do Rio",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Teatro Amazonas",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Teatro Municipal de São Paulo",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Theatro São Pedro",
+          "correta": false
+        }
+      ],
+      "id": 52
+    },
+    {
+      "texto": "Quem é esta personalidade histórica brasileira?",
+      "categoria": "Historia",
+      "imagem": "res://assets/images/personalidades/tiradentes.jpg",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Dom Pedro I",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Tiradentes",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Duque de Caxias",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Getúlio Vargas",
+          "correta": false
+        }
+      ],
+      "id": 53
+    },
+    {
+      "texto": "Identifique esta figura histórica:",
+      "categoria": "Historia",
+      "imagem": "res://assets/images/personalidades/princesa-isabel.jpg",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Princesa Isabel",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Maria Leopoldina",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Maria Quitéria",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Anita Garibaldi",
+          "correta": false
+        }
+      ],
+      "id": 54
+    },
+    {
+      "texto": "Quem é este importante líder brasileiro?",
+      "categoria": "Historia",
+      "imagem": "res://assets/images/personalidades/zumbi.jpg",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Zumbi dos Palmares",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Ganga Zumba",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Dandara",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Henrique Dias",
+          "correta": false
+        }
+      ],
+      "id": 55
+    },
+    {
+      "texto": "Qual região do Brasil está destacada no mapa?",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/mapas/regiao-norte.png",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Região Norte",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Região Nordeste",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Região Centro-Oeste",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Região Sul",
+          "correta": false
+        }
+      ],
+      "id": 56
+    },
+    {
+      "texto": "Identifique a região destacada:",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/mapas/regiao-nordeste.png",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Região Norte",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Região Nordeste",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Região Sudeste",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Região Sul",
+          "correta": false
+        }
+      ],
+      "id": 57
+    },
+    {
+      "texto": "Qual estado está destacado no mapa?",
+      "categoria": "Geografia",
+      "imagem": "res://assets/images/mapas/estado-sao-paulo.png",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rio de Janeiro",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Minas Gerais",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "São Paulo",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Paraná",
+          "correta": false
+        }
+      ],
+      "id": 58
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/quiz.gd" id="1_36y45"]
+
+[node name="Quiz" type="Control" unique_id=964213968]
+layout_mode = 3
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_36y45")
+
+[node name="Background" type="ColorRect" parent="." unique_id=957564206]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.105882354, 0.36862746, 0.24705882, 1)
+
+[node name="Margem" type="MarginContainer" parent="." unique_id=1912494732]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 28
+
+[node name="@VBoxContainer@28" type="VBoxContainer" parent="Margem" unique_id=124075475]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="@HBoxContainer@29" type="HBoxContainer" parent="Margem/@VBoxContainer@28" unique_id=1645253217]
+layout_mode = 2
+
+[node name="LblNumeroPergunta" type="Label" parent="Margem/@VBoxContainer@28/@HBoxContainer@29" unique_id=2100681154]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "Pergunta 1 de 5"
+autowrap_mode = 2
+
+[node name="LblCategoriaAtual" type="Label" parent="Margem/@VBoxContainer@28/@HBoxContainer@29" unique_id=1483995663]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "Geral"
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="BarraProgresso" type="ProgressBar" parent="Margem/@VBoxContainer@28" unique_id=1348181366]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+max_value = 5.0
+value = 1.0
+show_percentage = false
+
+[node name="@HBoxContainer@33" type="HBoxContainer" parent="Margem/@VBoxContainer@28" unique_id=1559542790]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="LblTempo" type="Label" parent="Margem/@VBoxContainer@28/@HBoxContainer@33" unique_id=571668035]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "30"
+autowrap_mode = 2
+
+[node name="BarraTempo" type="ProgressBar" parent="Margem/@VBoxContainer@28/@HBoxContainer@33" unique_id=1633902995]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 30.0
+value = 30.0
+show_percentage = false
+
+[node name="Timer" type="Timer" parent="Margem/@VBoxContainer@28" unique_id=2077231537]
+unique_name_in_owner = true
+
+[node name="ImagemPergunta" type="TextureRect" parent="Margem/@VBoxContainer@28" unique_id=851975542]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="@PanelContainer@38" type="PanelContainer" parent="Margem/@VBoxContainer@28" unique_id=1139785592]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="LblPergunta" type="Label" parent="Margem/@VBoxContainer@28/@PanelContainer@38" unique_id=1498522603]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "Texto da pergunta"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@ScrollContainer@42" type="ScrollContainer" parent="Margem/@VBoxContainer@28" unique_id=1980122320]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="@VBoxContainer@43" type="VBoxContainer" parent="Margem/@VBoxContainer@28/@ScrollContainer@42" unique_id=948260834]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="AltBtn0" type="Button" parent="Margem/@VBoxContainer@28/@ScrollContainer@42/@VBoxContainer@43" unique_id=1654988407]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "Alternativa 1"
+alignment = 0
+autowrap_mode = 2
+
+[node name="AltBtn1" type="Button" parent="Margem/@VBoxContainer@28/@ScrollContainer@42/@VBoxContainer@43" unique_id=122816536]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "Alternativa 2"
+alignment = 0
+autowrap_mode = 2
+
+[node name="AltBtn2" type="Button" parent="Margem/@VBoxContainer@28/@ScrollContainer@42/@VBoxContainer@43" unique_id=1516437078]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "Alternativa 3"
+alignment = 0
+autowrap_mode = 2
+
+[node name="AltBtn3" type="Button" parent="Margem/@VBoxContainer@28/@ScrollContainer@42/@VBoxContainer@43" unique_id=362760848]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "Alternativa 4"
+alignment = 0
+autowrap_mode = 2
+
+[node name="@HBoxContainer@48" type="HBoxContainer" parent="Margem/@VBoxContainer@28" unique_id=1807946513]
+layout_mode = 2
+
+[node name="LblAcertos" type="Label" parent="Margem/@VBoxContainer@28/@HBoxContainer@48" unique_id=578327829]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "Acertos: 0"
+autowrap_mode = 2
+
+[node name="LblPontos" type="Label" parent="Margem/@VBoxContainer@28/@HBoxContainer@48" unique_id=556539688]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "Pontos: 0"
+horizontal_alignment = 2
+autowrap_mode = 2

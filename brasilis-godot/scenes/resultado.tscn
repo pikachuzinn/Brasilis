@@ -1,0 +1,98 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/resultado.gd" id="1_ivjra"]
+
+[node name="Resultado" type="Control" unique_id=1080667173]
+layout_mode = 3
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_ivjra")
+
+[node name="Background" type="ColorRect" parent="." unique_id=92637965]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.105882354, 0.36862746, 0.24705882, 1)
+
+[node name="@CenterContainer@51" type="CenterContainer" parent="." unique_id=1867933845]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="@VBoxContainer@52" type="VBoxContainer" parent="@CenterContainer@51" unique_id=312831126]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="LblTitulo" type="Label" parent="@CenterContainer@51/@VBoxContainer@52" unique_id=1235551127]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "🏆 Excelente!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="LblAcertos" type="Label" parent="@CenterContainer@51/@VBoxContainer@52" unique_id=295563143]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "0 / 5"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="LblPontos" type="Label" parent="@CenterContainer@51/@VBoxContainer@52" unique_id=1580694627]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "0 pontos"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="LblPorcentagem" type="Label" parent="@CenterContainer@51/@VBoxContainer@52" unique_id=608534471]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "0%"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="LblMensagem" type="Label" parent="@CenterContainer@51/@VBoxContainer@52" unique_id=191436115]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "Mensagem de incentivo"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@Control@58" type="Control" parent="@CenterContainer@51/@VBoxContainer@52" unique_id=977013781]
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="BtnJogarNovamente" type="Button" parent="@CenterContainer@51/@VBoxContainer@52" unique_id=1456757361]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "🔄  Jogar Novamente"
+
+[node name="BtnVerRanking" type="Button" parent="@CenterContainer@51/@VBoxContainer@52" unique_id=617804518]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "🏆  Ver Ranking"
+
+[node name="BtnVoltarHome" type="Button" parent="@CenterContainer@51/@VBoxContainer@52" unique_id=2106679338]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "🏠  Início"

@@ -1,0 +1,132 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/home.gd" id="1_krot7"]
+
+[node name="Home" type="Control" unique_id=793754256]
+layout_mode = 3
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_krot7")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1214149804]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.105882354, 0.36862746, 0.24705882, 1)
+
+[node name="StreakLabel" type="Label" parent="." unique_id=2089694617]
+unique_name_in_owner = true
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -160.0
+offset_top = 24.0
+offset_right = -20.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "🔥 0 dias"
+autowrap_mode = 2
+
+[node name="Margem" type="MarginContainer" parent="." unique_id=482716940]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="Caixa" type="VBoxContainer" parent="Margem" unique_id=269475785]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="@Label@3" type="Label" parent="Margem/Caixa" unique_id=867187098]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "DESAFIO BRASILIS"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@Label@4" type="Label" parent="Margem/Caixa" unique_id=2046558526]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "Teste seus conhecimentos sobre a cultura,
+história e geografia do Brasil"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@Control@5" type="Control" parent="Margem/Caixa" unique_id=1532634500]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="BtnJogar" type="Button" parent="Margem/Caixa" unique_id=135813787]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶  JOGAR"
+
+[node name="BtnRanking" type="Button" parent="Margem/Caixa" unique_id=546247185]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "🏆  RANKING"
+
+[node name="BtnPerfil" type="Button" parent="Margem/Caixa" unique_id=1361515493]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "👤  PERFIL"
+
+[node name="PainelNome" type="PanelContainer" parent="." unique_id=2120274935]
+unique_name_in_owner = true
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="@ColorRect@9" type="ColorRect" parent="PainelNome" unique_id=703897689]
+layout_mode = 2
+color = Color(0, 0, 0, 0.75)
+
+[node name="@CenterContainer@10" type="CenterContainer" parent="PainelNome" unique_id=543067998]
+layout_mode = 2
+
+[node name="@PanelContainer@11" type="PanelContainer" parent="PainelNome/@CenterContainer@10" unique_id=1899189055]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+
+[node name="@VBoxContainer@12" type="VBoxContainer" parent="PainelNome/@CenterContainer@10/@PanelContainer@11" unique_id=434653425]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="@Label@13" type="Label" parent="PainelNome/@CenterContainer@10/@PanelContainer@11/@VBoxContainer@12" unique_id=1792620650]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "Como podemos te chamar?"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="NomeInput" type="LineEdit" parent="PainelNome/@CenterContainer@10/@PanelContainer@11/@VBoxContainer@12" unique_id=1239781118]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Seu nome ou apelido"
+max_length = 20
+
+[node name="BtnConfirmarNome" type="Button" parent="PainelNome/@CenterContainer@10/@PanelContainer@11/@VBoxContainer@12" unique_id=968525904]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Começar"

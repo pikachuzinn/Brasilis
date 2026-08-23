@@ -1,0 +1,14 @@
+# Godot 4+ specific ignores
+.godot/
+.import/
+export.cfg
+
+# Build Web exportado (fonte de verdade publicada fica em /docs, na raiz do
+# repositório, para o GitHub Pages). Reexporte com o comando da seção 10 do
+# README sempre que precisar regenerar esta pasta.
+/web-build/
+
+# Sistema
+.DS_Store
+web-build-*.png
+

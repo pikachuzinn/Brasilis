@@ -1,0 +1,183 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/perfil.gd" id="1_63x4o"]
+
+[node name="Perfil" type="Control" unique_id=1252811892]
+layout_mode = 3
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_63x4o")
+
+[node name="Background" type="ColorRect" parent="." unique_id=340151939]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.105882354, 0.36862746, 0.24705882, 1)
+
+[node name="Margem" type="MarginContainer" parent="." unique_id=2055453525]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="@VBoxContainer@71" type="VBoxContainer" parent="Margem" unique_id=509279382]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="@Control@72" type="Control" parent="Margem/@VBoxContainer@71" unique_id=1633668966]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="LblNome" type="Label" parent="Margem/@VBoxContainer@71" unique_id=155762935]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "Jogador"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@GridContainer@74" type="GridContainer" parent="Margem/@VBoxContainer@71" unique_id=1686229589]
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="@PanelContainer@75" type="PanelContainer" parent="Margem/@VBoxContainer@71/@GridContainer@74" unique_id=1692436195]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="@VBoxContainer@76" type="VBoxContainer" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@75" unique_id=1745179168]
+layout_mode = 2
+
+[node name="LblPontos" type="Label" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@75/@VBoxContainer@76" unique_id=852566736]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "0"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@Label@78" type="Label" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@75/@VBoxContainer@76" unique_id=256758418]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "🏆 Pontos Totais"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@PanelContainer@79" type="PanelContainer" parent="Margem/@VBoxContainer@71/@GridContainer@74" unique_id=236167741]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="@VBoxContainer@80" type="VBoxContainer" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@79" unique_id=872275100]
+layout_mode = 2
+
+[node name="LblStreak" type="Label" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@79/@VBoxContainer@80" unique_id=1405748760]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "0"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@Label@82" type="Label" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@79/@VBoxContainer@80" unique_id=1113261027]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "🔥 Streak Atual"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@PanelContainer@83" type="PanelContainer" parent="Margem/@VBoxContainer@71/@GridContainer@74" unique_id=1235858832]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="@VBoxContainer@84" type="VBoxContainer" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@83" unique_id=1026080991]
+layout_mode = 2
+
+[node name="LblPartidas" type="Label" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@83/@VBoxContainer@84" unique_id=1040655924]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "0"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@Label@86" type="Label" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@83/@VBoxContainer@84" unique_id=1390343205]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "🎮 Partidas"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@PanelContainer@87" type="PanelContainer" parent="Margem/@VBoxContainer@71/@GridContainer@74" unique_id=818681079]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="@VBoxContainer@88" type="VBoxContainer" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@87" unique_id=1134249867]
+layout_mode = 2
+
+[node name="LblMelhorStreak" type="Label" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@87/@VBoxContainer@88" unique_id=1604317773]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "0"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@Label@90" type="Label" parent="Margem/@VBoxContainer@71/@GridContainer@74/@PanelContainer@87/@VBoxContainer@88" unique_id=119384447]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.9411765, 1)
+text = "⭐ Melhor Streak"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@Label@91" type="Label" parent="Margem/@VBoxContainer@71" unique_id=8593731]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 0.8352941, 0.2901961, 1)
+text = "🏅 Conquistas"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="@ScrollContainer@94" type="ScrollContainer" parent="Margem/@VBoxContainer@71" unique_id=190771973]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ConquistasContainer" type="GridContainer" parent="Margem/@VBoxContainer@71/@ScrollContainer@94" unique_id=1704355997]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 3
+
+[node name="BtnVoltar" type="Button" parent="." unique_id=446020510]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 44)
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 24.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 16
+text = "← Voltar"
